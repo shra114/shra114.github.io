@@ -1,6 +1,155 @@
-<p>
-  Try my Math Practice Game:
-  <a href="https://shra114.github.io/math-practice-webapp/" target="_blank" rel="noopener">
-    Open Math Practice Game
-  </a>
-</p>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shravan Kumar | Script Showcase</title>
+    <style>
+      :root {
+        --bg: #0b1020;
+        --bg-soft: #121a33;
+        --card: #ffffff;
+        --text: #0f172a;
+        --muted: #475569;
+        --primary: #2563eb;
+        --primary-hover: #1d4ed8;
+        --ring: rgba(37, 99, 235, 0.25);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(1200px 600px at 10% -10%, #1e3a8a33, transparent),
+          radial-gradient(800px 500px at 90% 0%, #0ea5e933, transparent),
+          linear-gradient(180deg, var(--bg), var(--bg-soft));
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+
+      .container {
+        width: min(900px, 100%);
+      }
+
+      .hero {
+        background: var(--card);
+        border-radius: 20px;
+        padding: 40px 32px;
+        box-shadow:
+          0 20px 40px rgba(2, 6, 23, 0.35),
+          0 2px 8px rgba(2, 6, 23, 0.2);
+      }
+
+      .badge {
+        display: inline-block;
+        margin-bottom: 14px;
+        padding: 6px 12px;
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #1d4ed8;
+        background: #dbeafe;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(1.8rem, 4vw, 2.6rem);
+        line-height: 1.15;
+      }
+
+      p {
+        margin: 14px 0 0;
+        color: var(--muted);
+        font-size: 1.05rem;
+        line-height: 1.7;
+      }
+
+      .actions {
+        margin-top: 28px;
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 0;
+        border-radius: 12px;
+        padding: 12px 18px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.2s ease;
+      }
+
+      .btn-primary {
+        background: var(--primary);
+        color: #fff;
+      }
+
+      .btn-primary:hover {
+        background: var(--primary-hover);
+        transform: translateY(-1px);
+      }
+
+      .btn-secondary {
+        background: #eef2ff;
+        color: #1e293b;
+      }
+
+      .btn-secondary:hover {
+        background: #e2e8f0;
+      }
+
+      .btn:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 4px var(--ring);
+      }
+
+      .footer {
+        margin-top: 16px;
+        color: #cbd5e1;
+        font-size: 0.92rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <section class="hero">
+        <span class="badge">Portfolio</span>
+        <h1>Hi, I’m Shravan Kumar</h1>
+        <p>
+          I build practical web scripts and learning tools. Explore my projects,
+          including an interactive arithmetic practice app for kids.
+        </p>
+
+        <div class="actions">
+          <a
+            class="btn btn-primary"
+            href="https://shra114.github.io/math-practice-webapp/"
+            target="_blank"
+            rel="noopener"
+          >
+            Open Math Practice Game
+          </a>
+          <a class="btn btn-secondary" href="https://github.com/shra114" target="_blank" rel="noopener">
+            View GitHub Profile
+          </a>
+        </div>
+      </section>
+
+      <div class="footer">Designed for clarity, speed, and discoverability.</div>
+    </main>
+  </body>
+</html>
